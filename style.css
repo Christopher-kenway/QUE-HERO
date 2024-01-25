@@ -285,6 +285,8 @@ flex-direction: row;
 .feature01-info span img{
     width: 70px;
     height: 68.291px;
+    margin-right: -1.2rem;
+    margin-top: -0.5rem;
    
 }
 
@@ -461,28 +463,50 @@ line-height: normal;
 
 .user-box{
     max-width: 600px;
+    word-wrap: break-word;
    
 
 }
-.user-box input {
+input, textarea {
     width: 100%;
     padding: 10px;
-    font-size: 16px;
+    font-size: 32px; 
     color: #000000;
     margin-bottom: 30px;
     border: none;
     border-bottom: 1px solid #000000;
     outline: none;
     font-family: "BadaBoom pro bb";
-    font-size: 32px;
     background: transparent;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    word-break: break-all;
-    
-   
-    
-  }
+  
+}
+
+textarea {
+    resize: none;
+    height: 100px;
+    width: 20.5rem;
+    overflow: auto;
+    font-family: "BadaBoom pro bb";
+    font-size: 32px;
+    color: #000000;
+    border: none;
+    border-bottom: 1px solid #000000;
+    outline: none;
+    background: transparent;
+
+}
+
+textarea:focus {
+    outline: none;
+}
+
+textarea:focus ~ label,
+textarea:valid ~ label {
+ top: 20px;
+ left: 0;  
+   color: #000000;
+ font-size: 18px;
+}
 
   .form-section form{
         display: flex;
