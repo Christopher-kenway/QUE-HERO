@@ -1,0 +1,628 @@
+@import url(https://db.onlinewebfonts.com/c/b48816312e9e52094ea85f8d14df9e1e?family=BadaBoom+Pro+BB);
+@import url(https://db.onlinewebfonts.com/c/36cfbe58588c147ce392e4802c9f7dbf?family=Bangers);
+@import url(https://db.onlinewebfonts.com/c/348cdade4517e2b52fc1ecb28c17e4d4?family=Montserrat);
+@import url(https://db.onlinewebfonts.com/c/480d8462cd2eff42266210b4c036881f?family=Comic+Shark);
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;  
+}
+
+body{
+    min-height: 100vh;  
+}
+
+.container-fluid{
+    padding: 0px;
+    margin: 0; 
+    background-color: transparent;
+    overflow-x: hidden;
+    
+}
+
+/* Section 01 css */
+.section01{
+    width: 1588px;
+    height: 1059px;
+    background: url(assets/section1-img.png) no-repeat center ;
+    background-size: cover;
+    position: relative;
+    padding: 10px;
+    background-color: transparent;
+    z-index: 1;
+   
+    
+    
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar span{
+    color: #FFB900;
+    font-size: 50px;
+    font-weight: 900;
+    margin-left: 0rem;
+    cursor: pointer;
+    font-family: "Bangers";
+    line-height: 1.5rem;
+    letter-spacing: 0.1rem;
+
+}
+
+.navbar span>img{
+    width: 57.757px;
+    height: 87.349px;
+    transform: rotate(-4.662deg);
+    color: #FFB900;
+}
+
+.navbar-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-left: 8rem;
+    gap: 3rem;
+   
+}
+
+.navbar-nav a{
+    list-style: none;
+    font-size: 30px;
+    font-weight: 500;
+    color: #000000;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: "Bangers";
+    line-height: 1.5rem;
+}
+
+.nav-link:hover{
+    transform: scale(1.1);
+    color: whitesmoke;
+    transition: all 0.1s ease-in-out;
+    border-bottom: 3px solid whitesmoke;
+}
+.intro-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: "Bangers";
+    gap: 1.5rem;
+    position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+   
+}
+
+.intro-info h1, .intro-info h2{
+    color: #000;
+    text-align: center;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.intro-info h2{
+    display: flex;
+    flex-direction: column;
+    transform: rotate(-15.729deg);
+     margin-top: 3rem;
+     animation: float 3s ease-in-out infinite;
+	transition: top 0.2s ease;
+    position: relative;
+}
+
+@keyframes float {
+	0%,
+	100% {top: 0px;}
+	50% {top: -20px;}
+    50%{transform: rotate(-19deg);}
+}
+
+.intro-info h2 img{
+    width: 100px;
+    height: 100px;
+    margin-left: 20rem;
+    transform: rotate(9.733deg);
+   
+}
+
+.intro-info span{
+    color: #000;    
+    font-size: 150px;
+    font-weight: 400;  
+    margin-left: -50px; 
+    margin-top: -2.0rem;
+    font-style: normal;
+    
+}
+
+.intro-info span a{
+    margin-left: -50px;
+}
+
+.intro-info span img{
+    width: 197.371px;
+    height: 251.21px;
+    margin-left: -1rem;
+    transform: rotate(-2.733deg);
+    margin-top: -3rem;
+    color: #000;
+    
+    
+}
+
+.intro-info h4{
+    color: #000;
+    text-align: center;
+    font-family: badaboom pro bb;
+    font-size: 49px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.loginbtn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 400px;
+    margin-top: 3rem;
+}
+
+.loginbtn button{
+    list-style: none;
+    font-size: 40px;
+    font-weight: 500;
+    color: #000000;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: "BadaBoom Pro BB";
+    font-style: italic;
+    line-height: 1.5rem;
+    border: none;
+}
+
+.loginbtn button:hover{
+    transform: scale(1.1);
+    color: whitesmoke;
+    transition: all 0.1s ease-in-out;
+    border-radius: 0px;
+  
+}
+
+/* Section 02 css */
+.section02{
+    padding: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    color: #FFB900;
+    width: 100%;
+}
+
+.feature01{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 3rem;
+}
+
+.feature01 span{
+display: flex;
+flex-direction: row;
+}
+
+.img01{
+    width: 287px;
+    height: 388px;
+    border-radius: 10px;
+    transform: rotate(-51.142deg);
+    z-index: 0;
+}
+
+.img02{
+    width: 287px;
+    height: 388px;
+    border-radius: 10px;
+    margin-left: -10rem;
+    margin-top: 2rem;
+    z-index: 2;
+}
+
+.feature01-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: right;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    z-index: 1;
+    width: 671px;
+}
+
+.feature01-info p{
+    font-family: "Montserrat";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.feature01-info span{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+}
+
+.feature01-info span h3{
+    color: #FFB900;
+    text-align: center;
+    font-family: "BadaBoom pro bb";
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 0.5rem;
+    margin-top: 15px;
+}
+
+.feature01-info span img{
+    width: 70px;
+    height: 68.291px;
+   
+}
+
+.feature02, .feature03{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.feature02-info, .feature03-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    width: 704px;
+}
+
+.feature02-info p, .feature03-info p{
+    font-family: "Montserrat";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-align: right;
+}
+
+.feature02-info span{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: end;
+}
+
+.feature02-info h3{
+
+font-family: "BadaBoom pro BB";
+font-size: 30px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.feature02 span, .feature03 span{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+}
+
+.img03{
+    width: 382px;
+    height: 509px;
+    border-radius: 10px;
+    z-index: 1;
+     margin-right: -15rem;
+  
+}
+.img04{
+    width: 410.624px;
+    height: 261.564px;
+    transform: rotate(-59.577deg);
+    z-index: 0;
+    border-radius: 10px;
+    margin-right: -5rem;
+    margin-top: -26rem;
+}
+
+.img05{
+       width: 382px;
+    height: 509px;
+    border-radius: 10px;
+    z-index: 0;
+    margin-right: 5.5rem;
+    transform: rotate(15deg);
+}
+
+.section03{
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFB900;
+    color: #000;
+    width: 100%;
+    gap: 20px;
+}
+
+.section03 h1{
+    font-family: "BadaBoom pro bb";
+    font-size: 84px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.section03 h3{
+    font-family: "BadaBoom pro bb";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.section03-img{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.section03-img a{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    color: #000000;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: "BadaBoom pro bb";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 5.5rem;
+}
+
+.img-link{
+    border-radius: 10px;
+    display: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.section03-img img{
+    width: 346px;
+    height: 574px;
+    border-radius: 10px;
+    margin: 0 20px;
+    cursor: pointer;
+    padding: 1px;
+}
+
+
+.section03-img :hover{
+    transform: scale(1.1);
+    transition: all 0.5s ease-in-out;
+}
+
+.form-section{
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+    width: 100%;
+    gap: 20px;
+    margin-top: 2rem;
+}
+
+.form-section span{
+
+    font-family: "BadaBoom pro bb";
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.user-box{
+    max-width: 600px;
+   
+
+}
+.user-box input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    color: #000000;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #000000;
+    outline: none;
+    font-family: "BadaBoom pro bb";
+    font-size: 32px;
+    background: transparent;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: break-all;
+    
+   
+    
+  }
+
+  .form-section form{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 40rem;
+        
+  }
+
+ .form-section .user-box {
+    position: relative;
+  }
+
+  .user-box label {
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #000000;
+    opacity: 0.5;
+    pointer-events: none;
+    transition: .5s;
+    font-family: "BadaBoom pro bb";
+    font-size: 32px;
+  }
+
+ .user-box input:focus ~ label,
+ .user-box input:valid ~ label {
+  top: -20px;
+  left: 0;  
+    color: #000000;
+  font-size: 18px;
+}
+
+.footer{
+    padding: 10px 10px 2px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #000;
+    color: #FFB900;
+    gap: 20px;
+    
+}
+
+.footer-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-info span{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+   
+}
+
+.footer-info span h3{
+    color: #FFB900;
+    font-family: "BadaBoom pro bb";
+    font-size: 94px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -3px;
+}
+
+.footer-info span img{
+    width: 100px;
+    height: 100px;
+    z-index: 0;
+    margin-left: -0.5rem;
+    margin-right: -0.8rem;
+    transform: rotate(-4.662deg);
+    
+}
+
+.footer-socials{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 45px;
+    margin-top: 10px;
+}
+
+.footer-socials a>img{
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+}
+
+.footer-socials a>img:hover{
+    transform: scale(1.1);
+    transition: all 0.5s ease-in-out;
+}
+.footer-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.footer-info a{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: "BadaBoom pro bb";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    font-style: italic;
+    line-height: 5.5rem;
+    color: #FFB900;
+}
+
+.footer-info a:hover{
+    transform: scale(1.1);
+    transition: all 0.5s ease-in-out;
+}
+
+.footer p{
+    font-family: "BadaBoom pro bb";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 100;
+    line-height: normal;
+    
+}
